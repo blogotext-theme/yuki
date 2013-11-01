@@ -64,17 +64,17 @@ h1 {
 #menu {
 	color: white;
 	background-color: #252525;
-	padding: 15px 0px;
+	padding: 15px 0;
 	margin-bottom: 25px;
-	box-shadow: 0px 0px 5px #000 inset, 0px 0px 3px #000 inset;
+	box-shadow: 0 0 5px #000 inset, 0 0 3px #000 inset;
 }
 
 #menu .sous-menu {
 	line-height: 15px;
-	padding: 15px 0px 15px 25px;
+	padding: 15px 0 15px 25px;
 	display: inline;
 	font-weight: bold;
-	text-shadow: 0px 2px 0px #000;
+	text-shadow: 0 2px 0 #000;
 }
 
 #menu .sous-menu a {
@@ -107,15 +107,15 @@ h1 {
 
 #q {
 	border-radius: 5px 0 0 5px;
-	margin-right: 0px;
+	margin-right: 0;
 }
 #input-rechercher {
-	margin-left: 0px;
+	margin-left: 0;
 	border-radius: 0 5px 5px 0;
 }
 
 #input-rechercher, #q {
-	outline: solid transparent 0px;
+	outline: solid transparent 0;
 }
 
 /* Partie centrale : postes ============================ */
@@ -140,16 +140,16 @@ h1 {
 
 .post-hgr {
 	border-radius: 5px 5px 0 0;
-	text-shadow: 0px 2px 0px #000;
+	text-shadow: 0 2px 0 #000;
 	color: white;
 	padding: 12px;
-	box-shadow: 0px 0px 5px #000 inset, 0px 0px 3px #000 inset;
+	box-shadow: 0 0 5px #000 inset, 0 0 3px #000 inset;
 }
 .post-cnt {
 	border-radius: 5px;
 	padding: 20px;
 	background-color: #fff;
-	text-shadow: 0px 0px 4px #ddd;
+	text-shadow: 0 0 4px #ddd;
 }
 
 .post-cnt p {
@@ -160,11 +160,11 @@ h1 {
 }
 .post-ftr {
 	border-radius: 0 0 5px 5px;
-	text-shadow: 0px 2px 0px #000;
+	text-shadow: 0 2px 0 #000;
 	text-align: center;
 	color: white;
 	padding: 5px 10px 2px;
-	box-shadow: 0px 0px 5px #000 inset, 0px 0px 3px #000 inset;
+	box-shadow: 0 0 5px #000 inset, 0 0 3px #000 inset;
 }
 
 /* articles ================= */
@@ -200,8 +200,13 @@ h1 {
 	margin: auto;
 }
 
+#posts img, #posts iframe {padding: 4px;background: #fff;border: solid 1px #bbb;max-width: 100%;}
+#posts figure {display:block;float: right;margin: 5px 0 5px 10px; padding:10px; text-align: center; background: #ddd;}
+#posts figcaption {color: #333;}
 /* code presentation */
 .code, pre, code {
+	display:block;
+	max-height: 300px !important;
 	font-family: monospace;
 	border-radius: 5px;
 	padding: 10px;
@@ -209,6 +214,8 @@ h1 {
 	box-shadow: 1px 1px 2px black inset;
 	color: black;
 	white-space: pre-wrap;
+	line-height:1em;
+	overflow: scroll;
 }
 
 pre {
@@ -281,7 +288,7 @@ q {
 	text-align: right;
 	font-style: italic;
 }
-
+.permalien {padding: 1em 0;}
 
 /* liens de ?page=2 */
 .pagination {
@@ -299,7 +306,7 @@ q {
 	margin-bottom: 20px;
 	border-radius: 5px;
 	background-color: #252525;
-	box-shadow: 0px 0px 5px #000 inset, 0px 0px 3px #000 inset;
+	box-shadow: 0 0 5px #000 inset, 0 0 3px #000 inset;
 	padding-bottom: 40px;
 }
 
@@ -320,7 +327,7 @@ q {
 	border-radius: 5px 5px 0 0;
 	padding: 20px 10px 30px;
 	background-color: #fff;
-	text-shadow: 0px 0px 4px #ddd;
+	text-shadow: 0 0 4px #ddd;
 }
 
 #sidebar ul {
@@ -332,7 +339,7 @@ q {
 /* calendrier */
 #calendrier {
 	border: 1px solid #D03737;
-	border-top-width: 0px;
+	border-top-width: 0;
 	margin: 0 auto;
 	empty-cells: hide;
 	border-radius: 0 0 4px 4px;
@@ -394,7 +401,7 @@ q {
 	box-shadow: 2px 2px 5px black inset;
 	border: 1px solid black;
 	border-radius: 5px;
-	padding: 0px 2px;
+	padding: 0 2px;
 }
 
 
@@ -520,22 +527,17 @@ p.formatbut {
 	border-right: 1px solid #fafafa
 }
 
-
-
 /* .formatbut  */
+#pmm span { background: no-repeat -4px -142px url(images/format.png); }
+#pmp span { background: no-repeat -4px -162px url(images/format.png); }
 
-#pmm span { background: no-repeat 0 3px url(imgs/toggle.png); }
-#pmp span { background: no-repeat 0 3px url(imgs/toggle-expand.png); }
-
-#button01 span { background: no-repeat 0 3px url(imgs/edit-bold.png); }
-#button02 span { background: no-repeat 0 3px url(imgs/edit-italic.png); }
-#button03 span { background: no-repeat 0 3px url(imgs/edit-underline.png); }
-#button04 span { background: no-repeat 0 3px url(imgs/edit-strike.png); }
-#button09 span { background: no-repeat 0 3px url(imgs/edit-link.png); }
-#button10 span { background: no-repeat 0 3px url(imgs/edit-quotation.png); }
-#button12 span { background: no-repeat 0 3px url(imgs/edit-code.png); }
-
-
+#button01 span { background: no-repeat -4px   -1px url(images/format.png); }
+#button02 span { background: no-repeat -4px  -21px url(images/format.png); }
+#button03 span { background: no-repeat -4px  -42px url(images/format.png); }
+#button04 span { background: no-repeat -4px  -82px url(images/format.png); }
+#button09 span { background: no-repeat -4px  -62px url(images/format.png); }
+#button10 span { background: no-repeat -4px -102px url(images/format.png); }
+#button12 span { background: no-repeat -4px -122px url(images/format.png); }
 
 /* champs nom, email, etc */
 #form-commentaire .infos {
@@ -560,21 +562,21 @@ p.formatbut {
 }
 
 /* Footer ============================== */
-
 #footer {
 	text-align: center;
 	color: white;
 	background-color: #222;
 	padding: 15px 10px 15px 20px;
 	margin-bottom: 30px;
-	box-shadow: 0px 0px 5px #000 inset, 0px 0px 3px #000 inset;
+	box-shadow: 0 0 5px #000 inset, 0 0 3px #000 inset;
 }
 
 #footer a {
 	font-weight: bold;
-	text-shadow: 0px 2px 0px #000;
+	text-shadow: 0 2px 0 #000;
 }
 
+#email-adress { display: none!important; }
 
 /* Responsive Desing */
 
@@ -606,7 +608,7 @@ adaptative styles for the width of the visitor's screen */
 	}
 	#search {
 		display: block;
-		margin: 0px 25px;
+		margin: 0 25px;
 	}
 	#input-rechercher {
 		width: 25%;
@@ -624,7 +626,7 @@ adaptative styles for the width of the visitor's screen */
 	}
 	#main {
 		margin: 2px;
-		padding-top: 0px;
+		padding-top: 0;
 
 	}
 	#midle {
@@ -728,9 +730,7 @@ adaptative styles for the width of the visitor's screen */
 	}
 }
 
-
-
-
+/* for print */
 @media print {
 	body, .post {
 		font-family:"DejaVu Serif", "Times New Roman", Times, serif;
@@ -767,7 +767,7 @@ adaptative styles for the width of the visitor's screen */
 	}
 
 	#midle {
-		margin-right: 0px;
+		margin-right: 0;
 	}
 
 	pre, blockquote {
@@ -786,5 +786,3 @@ adaptative styles for the width of the visitor's screen */
 		page-break-after:avoid;
 	}
 }
-
-

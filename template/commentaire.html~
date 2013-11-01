@@ -1,7 +1,0 @@
-<article class="comment" id="{commentaire_ancre}">
-	<hgroup>
-		<h2 class="com_titre">{commentaire_auteur_lien} :</h2>
-		<h3 class="com_date">{commentaire_date} à {commentaire_heure}</h3>
-	</hgroup>
-	{commentaire_contenu}
-</article>
