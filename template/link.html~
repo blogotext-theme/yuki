@@ -1,0 +1,10 @@
+<article class="itembloc link" id="{lien_permalink}">
+	<hgroup>
+		<h2 class="com_titre"><a href="index.php?mode=links&amp;id={lien_permalink}">#</a> - <a href="{lien_url}">{lien_titre}</a></h2>
+		<h3 class="com_date">{lien_date} à {lien_heure} par {lien_auteur}</h3>
+	</hgroup>
+	<p>{lien_description}</p>
+</article>
+
+
+
